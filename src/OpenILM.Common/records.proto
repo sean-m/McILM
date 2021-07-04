@@ -1,0 +1,36 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "OpenILM.Common.Models";
+
+
+
+message RecordLocation {
+    required map<string, string> RecordToNode;
+}
+
+message Application {
+    required string name;
+    required string connectionId;
+}
+
+message User {
+    string name;
+    required string id;
+
+    enum UserType {
+        PRIME = 0;
+        EXTRA = 0;
+    }
+
+    optional string primeId;
+
+    required bool disabled;
+
+    repeated Application connectedTo;
+
+    required google.protobuf.Timestamp createdTime;
+    required google.protobuf.Timestamp modifiedTime;
+}
+

@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PackageId>OpenILM.Common</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Sean McArdle</Authors>
+    <Company></Company>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.17.3" />
+    <PackageReference Include="Grpc.Tools" Version="2.38.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Grpc.Core" Version="2.38.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="records.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="records.proto" GrpcServices="">
+      <Access></Access>
+      <ProtoCompile></ProtoCompile>
+      <CompileOutputs></CompileOutputs>
+      <OutputDir></OutputDir>
+      <Generator></Generator>
+    </Protobuf>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Worker": {
+      "commandName": "Project",
+      "applicationUrl": "http://localhost:13569;https://localhost:45002",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
