@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <PackageId>OpenILM.AutoSyncApi</PackageId>
+    <PackageId>McILM.AutoSyncApi</PackageId>
     <Version>0.0.1</Version>
     <Authors>Sean McArdle</Authors>
     <Company></Company>
@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OpenILM.Common\OpenILM.Common.csproj" />
+    <ProjectReference Include="..\McILM.Common\McILM.Common.csproj" />
   </ItemGroup>
 
 </Project>

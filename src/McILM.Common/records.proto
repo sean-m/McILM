@@ -2,7 +2,7 @@
 
 import "google/protobuf/timestamp.proto";
 
-option csharp_namespace = "OpenILM.Common.Models";
+option csharp_namespace = "McILM.Common.Models";
 
 
 

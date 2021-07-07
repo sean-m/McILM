@@ -2,13 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <PackageId>OpenILM.Core</PackageId>
+    <PackageId>McILM.Core</PackageId>
     <Version>0.0.1</Version>
     <Authors>Sean McArdle</Authors>
     <Company></Company>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'openilmcore' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'McILMcore' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'McILM.Core' " />
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     <PackageReference Include="Google.Protobuf" Version="3.17.3" />
@@ -16,13 +17,17 @@
     <PackageReference Include="Grpc.Core.Api" Version="2.38.1" />
     <PackageReference Include="Grpc.Net.Common" Version="2.38.0" />
     <PackageReference Include="Grpc.Auth" Version="2.38.1" />
+    <PackageReference Include="RulesEngine" Version="3.2.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OpenILM.Common\OpenILM.Common.csproj" />
+    <ProjectReference Include="..\McILM.Common\McILM.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="RulesEngine" />
   </ItemGroup>
 </Project>

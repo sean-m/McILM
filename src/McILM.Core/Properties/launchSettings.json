@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "openilmcore": {
+    "McILMcore": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

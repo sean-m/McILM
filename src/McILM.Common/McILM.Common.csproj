@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <PackageId>OpenILM.Common</PackageId>
+    <PackageId>McILM.Common</PackageId>
     <Version>0.0.1</Version>
     <Authors>Sean McArdle</Authors>
     <Company></Company>

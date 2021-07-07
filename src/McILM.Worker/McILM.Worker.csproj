@@ -4,12 +4,17 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Worker' " />
   <ItemGroup>
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.34.0" />
+    <PackageReference Include="RulesEngine" Version="3.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="RulesEngine" />
+  </ItemGroup>
 </Project>
